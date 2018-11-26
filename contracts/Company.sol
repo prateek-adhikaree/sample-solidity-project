@@ -6,6 +6,7 @@ contract Company {
     
     constructor () internal {
         owner = msg.sender;
+        addEmployee(owner);
     }
     
     mapping(address => bool) public isEmployee;
