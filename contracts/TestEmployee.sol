@@ -27,6 +27,10 @@ contract TestEmployee is Employee {
         // random address
         address _employee = 0x583031d1113ad414f02576bd6afabfb302140225;
         
+        // making sure _employee address is added to the employee map
+        if (!isEmployee[_employee])
+            addEmployee(_employee);
+        
         uint hoursLogged = getHoursLogged(_employee);
         logHour(7);
         require (hoursLogged + 7 == getHoursLogged(_employee), "Hours logged did not increase as expected");
