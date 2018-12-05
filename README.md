@@ -4,6 +4,12 @@ Sample solidity project to show inheritance and testing of solidity files
 
 # File structure
 
+``` solidity
+contract Company
+contract Employee is Company
+contract TestEmployee is Employee
+```
+
 ## Company contract
 This has the constructor as internal as it needs to be inherited by another contract.
 
