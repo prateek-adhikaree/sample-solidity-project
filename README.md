@@ -11,10 +11,18 @@ contract TestEmployee is Employee
 ```
 
 ### Company contract
-This has the constructor as internal as it needs to be inherited by another contract.
+
+[Company.sol](https://github.com/prateek-adhikaree/sample-solidity-project/blob/master/contracts/Company.sol)
+- This contract has the constructor as 'internal' as it needs to be inherited by another contract
+- Cannot be deployed on its own
 
 ### Employee contract
-This contract inherits Company and Employee is the contract that will be deployed (if needed).
+[Employee.sol](https://github.com/prateek-adhikaree/sample-solidity-project/blob/master/contracts/Employee.sol)
+- This contract inherits Company
+- Employee contract is the contract that will be deployed if we need to use the functions in Company and Employee
 
 ### TestEmployee contract
-This inherits Employee and this is what is used to encapsulate the functions that need testing.
+[TestEmployee.sol](https://github.com/prateek-adhikaree/sample-solidity-project/blob/master/contracts/TestEmployee.sol)
+- This is the Test contracted created just for functional testing 
+- Inherits Employee contract
+- Encapsulates the functions that need testing
