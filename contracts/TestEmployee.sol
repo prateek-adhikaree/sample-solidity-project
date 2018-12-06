@@ -1,4 +1,4 @@
-pragma solidity ^0.4.25;
+pragma solidity ^0.5.0;
 
 import "./Employee.sol";
 
@@ -23,7 +23,7 @@ contract TestEmployee is Employee {
     }
     
     // get hours logged by an employee
-    function testGetHoursLogged () public view returns (uint) {
+    function testGetHoursLogged () public returns (uint) {
         // random address
         address _employee = 0x583031D1113aD414F02576BD6afaBfb302140225;
         
