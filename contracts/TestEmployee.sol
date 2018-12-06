@@ -13,7 +13,7 @@ contract TestEmployee is Employee {
     // owner can add an employee
     function testAddEmployee () public {
         // random address
-        address _employee = 0x583031d1113ad414f02576bd6afabfb302140225;
+        address _employee = 0x583031D1113aD414F02576BD6afaBfb302140225;
         
         // making sure that employee is removed from the company's database'
         isEmployee[_employee] = false;
@@ -25,7 +25,7 @@ contract TestEmployee is Employee {
     // get hours logged by an employee
     function testGetHoursLogged () public view returns (uint) {
         // random address
-        address _employee = 0x583031d1113ad414f02576bd6afabfb302140225;
+        address _employee = 0x583031D1113aD414F02576BD6afaBfb302140225;
         
         // making sure _employee address is added to the employee map
         if (!isEmployee[_employee])
