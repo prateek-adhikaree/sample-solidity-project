@@ -23,6 +23,6 @@ contract TestEmployee is Employee
 
 ### TestEmployee contract
 [TestEmployee.sol](https://github.com/prateek-adhikaree/sample-solidity-project/blob/master/contracts/TestEmployee.sol)
-- This is the Test contracted created just for functional testing 
+- This is the Test contract, created just for functional testing 
 - Inherits Employee contract
 - Encapsulates the functions that need testing
